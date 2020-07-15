@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods</title>
+    <h1>using methods of array and string which are not taken in class :</h1>
+<p>all the explanation is given inside the file as comments</p>
+</head>
+<body>
+<!-- STRING METHODS:
+    1)Finding a String in a String:
+ The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+example:
+ var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+o/p:7
+
+2)The slice() Method:
+slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: the start position, and the end position (end not included).
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+The result of res will be:
+Banana
+
+3)The substring() Method
+substring() is similar to slice().
+The difference is that substring() cannot accept negative indexes.
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+The result of res will be:
+Banana
+
+4)Replacing String Content
+The replace() method replaces a specified value with another value in a string:
+Example
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3Schools");
+o/p:Please visit W3Schools
+ 
+5)String.trim()
+The trim() method removes whitespace from both sides of a string:
+Example
+var str = "       Hello World!        ";
+alert(str.trim());
+o/p:Hello World!
+
+6)The charAt() Method
+The charAt() method returns the character at a specified index (position) in a string:
+Example
+var str = "HELLO WORLD";
+str.charAt(0);           
+o/p:H
+
+7)The charCodeAt() Method
+The charCodeAt() method returns the unicode of the character at a specified index in a string:
+The method returns a UTF-16 code (an integer between 0 and 65535).
+Example
+var str = "HELLO WORLD";
+str.charCodeAt(0); 
+o/p:72
+
+ARRAY METHODS:
+1)Converting Arrays to Strings
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+Result:
+
+Banana,Orange,Apple,Mango
+ 
+2)The join() method also joins all array elements into a string.
+
+It behaves just like toString(), but in addition you can specify the separator:
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+Result:
+
+Banana * Orange * Apple * Mango
+
+3)Shifting Elements
+Shifting is equivalent to popping, working on the first element instead of the last.
+
+The shift() method removes the first array element and "shifts" all other elements to a lower index.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();     
+O/P:[ "Orange", "Apple", "Mango"]
+
+4)The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon"); 
+O/P:["Lemon","Banana", "Orange", "Apple", "Mango"]
+ -->
+</body>
+</html>
