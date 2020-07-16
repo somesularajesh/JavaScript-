@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using ternary</title>
+    <h1>using ternary operators to verify grade of a student</h1>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("Enter your marks correctly from 1 to 100"));
+        console.log((a==100 )? `Marks are ${a} and grade is S` : 
+                                                                (a<100 && a>=91) ? `Marks are ${a} and grade is A` :
+                                                                                                                    (a<91 && a>=81) ? `Marks are ${a} and grade is B` : 
+                                                                                                                                                                       (a<81 && a>=71) ? `Marks are ${a} and grade is C`: 
+                                                                                                                                                                                                                        (a<100 && a>=61) ? `Marks are ${a} and grade is D`:
+                                                                                                                                                                                                                                                                           `Marks are ${a} and grade is F`);
+    </script>
+</body>
+</html>

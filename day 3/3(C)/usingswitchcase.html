@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using switch case</title>
+    <h1>printing marks and grade of an user input</h1>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("Enter your marks correctly from 1 to 100"));
+        let G=0;
+        if (a==100)
+        {
+            G=1;
+        }
+        else if (a<100 && a>=91 )
+        {
+             G=2;
+        }
+        else if (a<91 && a>=81)
+        {
+             G=3;
+        }
+        else if (a<81 && a>=71)
+        {
+            G=4;
+        }
+         else if (a<100 && a>=61)
+        {
+            G=5;
+        }
+        switch(G)
+        {
+        case 1:
+            console.log(`Marks are ${a} and grade is S`); 
+            break;       
+        case 2:
+            console.log(`Marks are ${a} and grade is A`);
+            break; 
+        case 3:     
+            console.log(`Marks are ${a} and grade is B`); 
+            break;       
+        case 4:  
+            console.log(`Marks are ${a} and grade is C`); 
+            break;       
+        case 5:  
+            console.log(`Marks are ${a} and grade is D`); 
+             break;       
+        default:     
+            console.log(`Marks are ${a} and grade is F`);       
+        }
+        
+    </script>
+</body>
+</html>
