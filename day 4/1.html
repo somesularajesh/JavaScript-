@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+    <h1>for loop programm for iterating 100 numbers based on conditions</h1>
+</head>
+<body>
+    <script>
+         count=0;
+        for(i=1;i>=1 && i<=100;i++)
+        {
+            //debugger;
+            if(i%3==0)
+            {
+                console.log(`fizz`);
+                /*count=count+1;
+                console.log(count);
+                if u get 33 it is correct */
+            }
+            if(i%5==0)
+            {
+                console.log(`buzz`);
+                /*count=count+1;
+                console.log(count);
+                if u get 20 it is correct */
+            }
+            if(i%3==0 && i%5==0 )
+            {
+                console.log(`fizzbuzz`);
+                /*count=count+1;
+                console.log(count); 
+                if u get 6 it is correct*/
+            }
+        }
+    </script>
+</body>
+</html>

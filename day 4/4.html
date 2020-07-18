@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <h1>using java script and making a calculator</h1>
+</head>
+<body>
+    
+    <script>
+        
+       let addition = function(x,y)
+        {
+          sum=x+y;
+          return sum;
+        }
+        let subtraction = function(x,y)
+        {
+          sub=x-y;
+          return sub;
+        }
+        let multiply = function(x,y)
+        {
+          res=x*y;
+          return res;
+        }
+        let divide = function(x,y)
+        {
+          res=x/y;
+          return res;
+        }
+        let squareroot = function(x)
+        {
+          res=Math.sqrt(x);
+          return res;
+        }
+        let percentage = function(x,y)
+        {
+          res=x*(y/100);
+          return res;
+        }
+        /*console.log(addition(2,3));
+        console.log(subtraction(2,3));
+        console.log(multiply(2,3));
+        console.log(divide(3,2));
+        console.log(squareroot(2,3));
+        console.log(percentage(100,25));
+       */
+       let  count=confirm("do u want use the calculator");
+       if (count==true) 
+       {
+        let input=prompt("enter the operation(+,-,*,/,sqr,%) and the numbers seperated by a space");
+       let [a,b,c]=input.split(` `);
+             if(a==`+`)
+           {let x=addition(Number(b),Number(c));
+             console.log(x); }
+             else if(a==`-`)
+           {let x=subtraction(Number(b),Number(c));
+             console.log(x); }
+            else if(a==`*`)
+           {let x=multiply(Number(b),Number(c));
+             console.log(x); }
+            else if(a==`/`)
+           {let x=divide(Number(b),Number(c));
+             console.log(x); }
+            else if(a==`sqr`)
+           {let x=squareroot(Number(b));
+             console.log(x); }
+             else if(a==`%`)
+           {let x=percentage(Number(b),Number(c));
+             console.log(x); }
+            else
+           { console.log("enter the input based on information given and in order"); }
+       }
+       else
+       { console.log("its ok if u do not want use now ,use")}
+    </script>
+</body>
+</html>

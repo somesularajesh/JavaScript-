@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using spread operator</title>
+    <h1>shopping list problem using using spread oprerator</h1>
+</head>
+<body>
+    <script>
+        let shopping_List=[`rice`,`juice`,`veggies`,`chicken`,`milk`];
+        //console.log(list);
+        let shopping_Basket= [...shopping_List];
+        //console.log(shopping_Basket);
+        shopping_Basket.push(`beef`);
+        shopping_Basket.push(`oil`);
+        shopping_Basket.push(`sugar`);
+        shopping_Basket.push(`teapowder`);
+        shopping_Basket.push(`bread`);
+        console.log(`shopping Basket list is ${shopping_Basket}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object destucture</title>
+    <h1>
+        destructuring the given object and getting dat from it
+    </h1>
+</head>
+<body>
+    <script>
+        const student={
+            name:`Helsinki`,
+            age:24,
+            projects:{ diceGame:`Two player dice game using Javascript`,}
+        }
+        const {name,age,projects:{diceGame}}= student;
+        console.log(name,age,diceGame)
+        //console.log(`name is ${name} and his age is ${age} and his project on dicegame is ${diceGame}`)
+    </script>
+</body>
+</html>

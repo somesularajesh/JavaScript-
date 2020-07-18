@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using arrow function</title>
+    <h1>
+        using arrow functions and changing the given code 
+    </h1>
+</head>
+<body>
+    <script>
+let ask=(question,yes,no) => confirm(question) ? yes():no() ;
+ask ( "do u agree?",  function() {alert("you agreed.");},function() {alert("you cancelled the execution");});
+    </script>
+</body>
+</html>

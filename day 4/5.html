@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>a bonus</title>
+    <h1>calculating bonus for a employee based on his sales</h1>
+</head>
+<body>
+    <script>
+        //debugger;
+        let salary= Number(prompt("enter the employee sales done during the year"));
+        //console.log(salary,typeof(salary));
+        function bonus(a)
+        {
+            if (a<=0)
+            { 
+                return 0;
+            }
+            else if (a>0 && a<=5000)
+            {
+               let result=(0.02*a)+a;
+                return result;
+            }
+            else if (a>=5001 && a<=10000)
+            {
+               let result=(0.05*a)+a;
+               return result;
+            }
+            else if (a>=10001 && a<=20000)
+            {
+                let result=(0.07*a)+a;
+                return result;
+            }
+            else
+            {
+                let result=(0.1*a)+a;
+                return result;
+            }
+        
+         } 
+            
+           let x=bonus(salary); 
+           if(x==0) 
+           {
+            console.log(`enter valid amount of salary`);
+           }
+           else{
+            console.log(`the salary of a employee alongwith bonus of the employee is ${x}`);
+           }
+          
+        
+    </script>
+
+</body>
+</html>
